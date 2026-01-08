@@ -36,3 +36,24 @@ body {
     margin: 0mm;
   }
 }
+
+/* ... existing code ... */
+
+/* STYLING FOR THE NEW PAGE NODE */
+.page-node {
+  background: white;
+  min-height: 11in; /* Exact height */
+  padding: 1in;     /* Margins */
+  margin-bottom: 2rem; /* Gap between pages */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+}
+
+/* Hide the gap when printing */
+@media print {
+  .page-node {
+    margin-bottom: 0;
+    box-shadow: none;
+    border: none;
+  }
+}
