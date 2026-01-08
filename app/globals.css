@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #f3f4f6; /* Light gray background */
+  color: #171717;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.ProseMirror {
+  outline: none;
+  height: 100%;
+}
+
+/* PRINT STYLING */
+@media print {
+  body {
+    background: white;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-container {
+    box-shadow: none !important;
+    margin: 0 !important;
+    border: none !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  @page {
+    size: letter; 
+    margin: 0mm;
+  }
+}
